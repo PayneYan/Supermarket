@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,10 +15,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Supermarket.DataAccess.Data;
 using Supermarket.DataAccess.Interface;
 using Supermarket.DataAccess.Repository;
 using Supermarket.DataAccess.Service;
+using Supermarket.Domain.JWT;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Supermarket.WebApi
@@ -33,8 +37,43 @@ namespace Supermarket.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region 读取配置
+            JWTConfig config = new JWTConfig();
+            Configuration.GetSection("JWT").Bind(config);
+            #endregion
 
-           
+            #region 启用JWT认证
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).
+            AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = config.Issuer,
+                    ValidAudience = config.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.IssuerSigningKey)),
+                    //ClockSkew = TimeSpan.FromMinutes(5)
+                };
+                //通过TokenValidationParameters的构造方法查看参数的默认值如下：
+                //public TokenValidationParameters()
+                //{
+                //    RequireExpirationTime = true;
+                //    RequireSignedTokens = true;
+                //    SaveSigninToken = false;
+                //    ValidateActor = false;
+                //    ValidateAudience = true;
+                //    ValidateIssuer = true;
+                //    ValidateIssuerSigningKey = false;
+                //    ValidateLifetime = true;
+                //    ValidateTokenReplay = false;
+                //}
+                //DefaultClockSkew = TimeSpan.FromSeconds(300); //即ClockSkew的默认值为5分钟
+            });
+            #endregion
+
             // Add the UseSqlServer code
             services.AddDbContext<SupermarketContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Supermarket"))
@@ -47,7 +86,7 @@ namespace Supermarket.WebApi
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-                 // Set the comments path for the Swagger JSON and UI.
+                // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
@@ -55,8 +94,8 @@ namespace Supermarket.WebApi
 
             services.AddScoped<SupermarketContext>();
             services.AddScoped<IRepositoryFactory, RepositoryFactory>();
-            services.AddScoped<IUserService,UserService>();
-            
+            services.AddScoped<IUserService, UserService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

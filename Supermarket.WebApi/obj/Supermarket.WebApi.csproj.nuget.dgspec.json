@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj": {}
+    "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj": {
+    "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
+        "projectUniqueName": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
         "projectName": "Supermarket.DataAccess",
-        "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\v-paya\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\obj\\",
+        "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\yan0113\\.nuget\\packages\\",
+        "outputPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\v-paya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yan0113\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
-                "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
+              "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
+                "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
               }
             }
           }
@@ -72,20 +72,20 @@
         }
       }
     },
-    "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
+    "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj",
+        "projectUniqueName": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj",
         "projectName": "Supermarket.Domain",
-        "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj",
-        "packagesPath": "C:\\Users\\v-paya\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\obj\\",
+        "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj",
+        "packagesPath": "C:\\Users\\yan0113\\.nuget\\packages\\",
+        "outputPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\v-paya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yan0113\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -124,20 +124,20 @@
         }
       }
     },
-    "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj": {
+    "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj",
+        "projectUniqueName": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj",
         "projectName": "Supermarket.WebApi",
-        "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj",
-        "packagesPath": "C:\\Users\\v-paya\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\obj\\",
+        "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\Supermarket.WebApi.csproj",
+        "packagesPath": "C:\\Users\\yan0113\\.nuget\\packages\\",
+        "outputPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\v-paya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yan0113\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,11 +150,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj": {
-                "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj"
+              "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj": {
+                "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj"
               },
-              "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
-                "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
+              "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
+                "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
               }
             }
           }

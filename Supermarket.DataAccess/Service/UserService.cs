@@ -25,10 +25,10 @@ namespace Supermarket.DataAccess.Service
 
         public async Task<int> AddUser(UserRequest userRequest)
         {
-            var service = this.CreateService<User>();   
-         
+            var service = this.CreateService<User>();      
             var user = userRequest.MapTo<User>();
             user.Id = Guid.NewGuid().ToString("N");
+            user.Password = DESEncryptHelper.Encrypt(user.Password);
             user.CreateTime = DateTime.Now;
             
             return await service.AddAsync(user);

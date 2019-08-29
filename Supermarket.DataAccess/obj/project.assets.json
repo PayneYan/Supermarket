@@ -2086,7 +2086,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "vgqYtrAg2PuFWsiN3Kz0nN7dQdrtB2zOlrfeyokLvkMzdGeuOTKJM/dixAvNi4goPOlRVKXi3aUtrfGiDl+PbQ==",
+      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -3244,23 +3244,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\v-paya\\.nuget\\packages\\": {},
+    "C:\\Users\\yan0113\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
+      "projectUniqueName": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
       "projectName": "Supermarket.DataAccess",
-      "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\v-paya\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\obj\\",
+      "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\Supermarket.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\yan0113\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\v-paya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yan0113\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3273,8 +3273,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
-              "projectPath": "D:\\Study\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
+            "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj": {
+              "projectPath": "D:\\Practice\\SourceCode\\NetCore\\2019-08\\2019-08-29\\Supermarket\\Supermarket.Domain\\Supermarket.Domain.csproj"
             }
           }
         }
