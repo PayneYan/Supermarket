@@ -15,7 +15,6 @@ D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\bin\Debug\netstandard2.0\Supermarket.Domain.pdb
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
-D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\obj\Debug\netstandard2.0\Supermarket.Domain.csprojAssemblyReference.cache
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\obj\Debug\netstandard2.0\Supermarket.Domain.csproj.CoreCompileInputs.cache
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\obj\Debug\netstandard2.0\Supermarket.Domain.AssemblyInfoInputs.cache
 D:\Practice\SourceCode\NetCore\2019-08\2019-08-29\Supermarket\Supermarket.Domain\obj\Debug\netstandard2.0\Supermarket.Domain.AssemblyInfo.cs

@@ -1,11 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Supermarket.DataAccess.Data;
+using Supermarket.DataAccess.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Supermarket.DataAccess.Data;
-using Supermarket.DataAccess.Interface;
 
 namespace Supermarket.DataAccess.Repository
 {
@@ -18,7 +18,7 @@ namespace Supermarket.DataAccess.Repository
             this._dbContext = dbContext;
         }
 
-         #region ====================新增======================
+        #region ====================新增======================
         /// <summary>
         /// 增加一条记录(异步方式)
         /// </summary>

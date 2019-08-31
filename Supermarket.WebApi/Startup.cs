@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Supermarket.DataAccess.Data;
 using Supermarket.DataAccess.Interface;
 using Supermarket.DataAccess.Repository;
 using Supermarket.DataAccess.Service;
-using Supermarket.Domain.JWT;
+using Supermarket.DataAccess.Token;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Text;
 
 namespace Supermarket.WebApi
 {
@@ -38,7 +32,9 @@ namespace Supermarket.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             #region 读取配置
-            JWTConfig config = new JWTConfig();
+            services.AddSingleton<ITokenHelper, TokenHelper>();
+            services.Configure<JWTConfig>(Configuration.GetSection("JWT"));
+            var config = new JWTConfig();
             Configuration.GetSection("JWT").Bind(config);
             #endregion
 
@@ -111,6 +107,7 @@ namespace Supermarket.WebApi
                 app.UseHsts();
             }
 
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
 

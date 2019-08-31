@@ -1,11 +1,11 @@
+using AutoMapper;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using AutoMapper;
 
 namespace Supermarket.DataAccess.Tools
 {
-   /// <summary>
+    /// <summary>
     /// AutoMapper扩展帮助类
     /// </summary>
     public static class AutoMapperHelper

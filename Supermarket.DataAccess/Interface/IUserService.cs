@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Supermarket.Domain.Models;
 using Supermarket.Domain.Request;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Supermarket.DataAccess.Interface
 {
     public interface IUserService
     {
-         List<User> GetUsers();
+        User GetUser(string id);
 
-         Task<int> AddUser(UserRequest userRequest);
+        List<User> GetAllUsers();
+
+        Task<int> AddUser(UserRequest userRequest);
     }
 }

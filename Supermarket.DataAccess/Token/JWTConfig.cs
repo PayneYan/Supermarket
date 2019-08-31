@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Supermarket.Domain.JWT
+namespace Supermarket.DataAccess.Token
 {
     public class JWTConfig
     {
@@ -10,5 +6,8 @@ namespace Supermarket.Domain.JWT
         public string Audience { get; set; }
         public string IssuerSigningKey { get; set; }
         public int AccessTokenExpiresMinutes { get; set; }
+
+        public string RefreshTokenAudience { get; set; }
+        public int RefreshTokenExpiresMinutes { get; set; }
     }
 }
