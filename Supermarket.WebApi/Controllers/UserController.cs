@@ -1,16 +1,15 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Supermarket.DataAccess.Interface;
 using Supermarket.Domain.Models;
 using Supermarket.Domain.Request;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Supermarket.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -20,10 +19,9 @@ namespace Supermarket.WebApi.Controllers
         }
         // GET api/user
         [HttpGet]
-        [AllowAnonymous]
         public ActionResult<List<User>> Get()
         {
-            return _userService.GetUsers();
+            return _userService.GetAllUsers();
         }
 
         // POST api/user
